@@ -100,16 +100,13 @@ exports.handler = async (event) => {
 };
     });
 
-   return {
+  return {
   statusCode: 200,
   headers,
   body: JSON.stringify({
     ok: true,
     orderCode,
-    alreadyRegistered: yaExiste,
-    message: yaExiste
-      ? "Este pedido ya estaba registrado. No se modificó."
-      : "Pedido guardado correctamente en Firestore."
+    message: "Pedido guardado correctamente en Firestore."
   })
 };
 

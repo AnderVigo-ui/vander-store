@@ -1,0 +1,1071 @@
+# DOCUMENTO DE REQUISITOS DEL PRODUCTO (PDR)
+# VANDER STORE — TIENDA VIRTUAL DE PREVENCIÓN Y EMERGENCIA
+
+## 1. INFORMACIÓN GENERAL DEL PROYECTO
+
+**Nombre comercial:** VANDER STORE  
+**Eslogan:** Tu seguridad a un clic.  
+**Propietario:** Ander Vigo.  
+**Correo electrónico:** anvigoarmas19@gmail.com  
+**Teléfono y WhatsApp:** +51 974 436 335  
+**Número de Yape proporcionado:** 974436335  
+**Ubicación:** Trujillo, Perú.  
+**Moneda:** Sol peruano (PEN), con símbolo S/.  
+**Tipo de aplicación:** Página web comercial interactiva y responsive.  
+**Herramienta para generar el código:** Google AI Studio.  
+**Editor de código:** Visual Studio Code.  
+**Tecnologías principales:** HTML5, CSS3 y JavaScript ES6+ nativo.  
+**Servicios de publicación:** GitHub y Netlify.  
+**Servicio para el formulario de contacto:** Formspree.  
+**Canal para coordinar pedidos:** WhatsApp.  
+**Base de datos adicional solicitada:** Firebase Cloud Firestore.
+
+## 2. INSTRUCCIÓN PRINCIPAL
+
+Desarrolla una tienda virtual real, funcional, moderna, elegante y profesional denominada VANDER STORE, especializada en la venta de productos de prevención, preparación y emergencia ante lluvias intensas, inundaciones, cortes de energía y situaciones relacionadas con el Fenómeno El Niño.
+
+Debes respetar las instrucciones técnicas del proyecto escolar: utilizar HTML5, CSS3 y JavaScript ES6+ nativo en el frontend, sin frameworks de interfaz ni plantillas prefabricadas. La aplicación debe estar organizada en archivos separados y preparada para editarse en Visual Studio Code, almacenarse en GitHub y publicarse en Netlify.
+
+No quiero una simple maqueta visual ni una página con botones decorativos. Quiero que todos los elementos interactivos tengan una función real, que el carrito calcule correctamente los precios, que los formularios validen los datos, que WhatsApp prepare el pedido completo y que los pedidos se guarden en la base de datos cuando la integración esté configurada.
+
+No inventes integraciones, credenciales, confirmaciones de pago, disponibilidad de productos ni resultados de operaciones. Si alguna función depende de una configuración externa pendiente, indícalo expresamente.
+
+El diseño debe ser atractivo y comparable, en facilidad de uso y claridad, con el de una tienda comercial profesional. Sin embargo, debe tener identidad propia, código comprensible y una estructura sencilla de mantener.
+
+La prioridad es conseguir una aplicación funcional, estable, rápida, accesible y adaptable a computadoras, tablets y celulares.
+
+## 3. PROPÓSITO Y PROPUESTA DE VALOR
+
+VANDER STORE será una tienda virtual orientada a facilitar el acceso a productos útiles para la preparación ante lluvias y emergencias.
+
+La tienda permitirá a los usuarios consultar productos, conocer sus características, revisar precios, seleccionar cantidades, calcular el importe de su compra y coordinar el pedido mediante WhatsApp.
+
+La propuesta de valor consiste en ofrecer un catálogo organizado, información clara, precios visibles y un proceso de compra sencillo que facilite la preparación de las familias ante situaciones imprevistas.
+
+El público objetivo estará formado por familias, hogares, pequeños negocios, estudiantes y personas que buscan artículos básicos de prevención y emergencia.
+
+La tienda no debe afirmar que los productos garantizan la seguridad absoluta ni utilizar mensajes alarmistas. Debe transmitir confianza, prevención, organización y responsabilidad.
+
+## 4. IDENTIDAD VISUAL Y DISEÑO
+
+### 4.1. Estilo visual
+
+Diseña una interfaz moderna, elegante, limpia y profesional, con una identidad comercial propia.
+
+Debe transmitir seguridad, confianza, organización, rapidez y facilidad de compra.
+
+Inspírate en los principios de usabilidad de las grandes tiendas virtuales: navegación clara, buscador visible, productos bien presentados, precios fáciles de identificar, carrito accesible y proceso de compra sencillo. No copies directamente la identidad ni el diseño exacto de ninguna marca existente.
+
+Evita un aspecto infantil, excesivamente colorido, recargado o lleno de animaciones innecesarias.
+
+### 4.2. Paleta de colores
+
+Utiliza los siguientes colores corporativos:
+
+- Azul marino: #14263D. Color principal de la marca.
+- Azul comercial: #2463A6. Botones principales y enlaces.
+- Verde azulado: #148A8A. Acentos y estados positivos.
+- Blanco: #FFFFFF. Fondo principal.
+- Gris claro: #F3F5F7. Fondos secundarios.
+- Gris oscuro: #273444. Textos.
+- Ámbar: #D7A84B. Avisos y advertencias.
+
+Mantén un contraste adecuado y utiliza los colores de manera consistente.
+
+### 4.3. Logotipo y marca
+
+Crea una presentación tipográfica elegante para VANDER STORE.
+
+El nombre debe ser visible en la cabecera y reconocible en la página de inicio.
+
+Puedes incorporar un símbolo original relacionado con protección, prevención o compras, siempre que no recargue el diseño.
+
+No utilices logotipos de otras empresas ni inventes certificaciones comerciales.
+
+### 4.4. Tipografía y componentes
+
+Utiliza una tipografía sans serif moderna y legible.
+
+Los títulos, descripciones, precios, botones y mensajes deben mantener una jerarquía visual clara.
+
+Las tarjetas de productos deben tener imágenes consistentes, bordes suaves, espaciado equilibrado y sombras discretas.
+
+Los botones deben distinguirse claramente y contar con estados visuales normales, de foco, de carga, deshabilitados y de interacción.
+
+Las animaciones deben ser discretas y no afectar la rapidez ni la accesibilidad.
+
+## 5. ESTRUCTURA DE LA PÁGINA WEB
+
+Organiza la aplicación en los siguientes apartados.
+
+### 5.1. Cabecera o barra de navegación
+
+Debe incluir:
+
+- Logotipo VANDER STORE.
+- Enlace Inicio.
+- Enlace Productos.
+- Acceso a las categorías.
+- Enlace Acerca de nosotros.
+- Enlace Contacto.
+- Buscador superior.
+- Icono del carrito.
+- Contador de artículos seleccionados.
+
+La cabecera debe ser ordenada, elegante y fácil de utilizar.
+
+En computadoras debe mostrar una navegación horizontal. En dispositivos móviles debe utilizar un menú compacto que funcione correctamente.
+
+El contador del carrito debe mostrar la cantidad total de unidades seleccionadas.
+
+Todos los enlaces deben llevar a una sección real o ejecutar una acción definida.
+
+### 5.2. Página de inicio
+
+La página principal debe contener:
+
+1. Cabecera y navegación.
+2. Buscador superior.
+3. Banner principal.
+4. Botón para explorar el catálogo.
+5. Categorías destacadas.
+6. Productos destacados.
+7. Sección de beneficios.
+8. Sección de prevención y preparación.
+9. Explicación del proceso de compra.
+10. Acceso al contacto.
+11. Pie de página.
+
+Texto principal del banner:
+
+“Prepárate hoy, protege tu tranquilidad”.
+
+Texto secundario:
+
+“Encuentra productos de prevención y emergencia para tu hogar y tu familia”.
+
+Botón principal:
+
+“Explorar productos”.
+
+El botón debe llevar directamente al catálogo.
+
+Utiliza imágenes apropiadas y optimizadas relacionadas con la preparación ante lluvias y emergencias.
+
+### 5.3. Catálogo de productos
+
+El catálogo debe mostrar los productos activos disponibles en la fuente de datos configurada.
+
+Cada tarjeta debe incluir:
+
+- Fotografía del producto.
+- Nombre.
+- Descripción breve.
+- Precio en soles.
+- Disponibilidad.
+- Botón Ver detalles.
+- Botón Agregar al carrito.
+
+Los descuentos solo deben mostrarse cuando estén configurados de manera real.
+
+No inventes valoraciones, reseñas, ventas, descuentos ni testimonios.
+
+El catálogo debe adaptarse automáticamente al tamaño de pantalla.
+
+### 5.4. Categorías
+
+Organiza los productos en estas categorías:
+
+- Iluminación y energía.
+- Protección contra lluvias.
+- Primeros auxilios.
+- Agua e higiene.
+- Herramientas de emergencia.
+- Kits de emergencia.
+
+Al seleccionar una categoría, deben mostrarse únicamente los productos correspondientes.
+
+Incluye una opción para volver a mostrar todos los productos.
+
+### 5.5. Buscador superior
+
+El buscador debe estar ubicado en una posición visible en la parte superior de la tienda.
+
+Debe permitir buscar por nombre, descripción y categoría.
+
+Debe ignorar las diferencias entre mayúsculas y minúsculas y los espacios adicionales.
+
+Incluye:
+
+- Campo de búsqueda.
+- Icono de lupa.
+- Botón para limpiar la búsqueda.
+- Resultados actualizados.
+- Mensaje cuando no existan coincidencias.
+
+La búsqueda debe funcionar rápidamente y sin recargar innecesariamente la página.
+
+No muestres productos inexistentes ni resultados inventados.
+
+### 5.6. Filtros y ordenamiento
+
+Incluye filtros por:
+
+- Categoría.
+- Precio mínimo.
+- Precio máximo.
+- Disponibilidad.
+
+Permite combinar filtros y limpiarlos mediante un botón.
+
+Incluye las opciones de ordenamiento:
+
+- Relevancia.
+- Precio de menor a mayor.
+- Precio de mayor a menor.
+- Nombre de A a Z.
+
+El ordenamiento debe aplicarse a los productos reales del catálogo.
+
+Si no existen resultados, muestra un mensaje claro y permite restablecer los filtros.
+
+### 5.7. Detalle del producto
+
+Al seleccionar un producto, muestra:
+
+- Nombre completo.
+- Fotografía.
+- Descripción.
+- Características.
+- Precio.
+- Categoría.
+- Disponibilidad.
+- Selector de cantidad.
+- Botón Agregar al carrito.
+- Información de entrega cuando esté configurada.
+
+Las variantes, tallas y colores deben aparecer únicamente cuando correspondan al producto y estén disponibles.
+
+No permitas cantidades inferiores a uno ni cantidades superiores al stock disponible.
+
+Si el producto está agotado, informa de ello y deshabilita la compra.
+
+### 5.8. Acerca de nosotros
+
+Utiliza el siguiente texto como descripción inicial:
+
+“VANDER STORE es una tienda virtual dedicada a facilitar el acceso a productos de prevención y emergencia. Nuestro objetivo es ayudar a las familias a prepararse mejor ante lluvias y situaciones imprevistas mediante un catálogo organizado, información clara y atención directa para coordinar sus pedidos”.
+
+Añade el eslogan y los canales de contacto.
+
+No inventes años de experiencia, sucursales, certificaciones ni una historia empresarial que no haya sido proporcionada.
+
+### 5.9. Contacto
+
+Muestra la siguiente información:
+
+Correo: anvigoarmas19@gmail.com.
+
+WhatsApp: +51 974 436 335.
+
+Ubicación: Trujillo, Perú.
+
+El correo debe abrirse mediante un enlace mailto funcional.
+
+El botón de WhatsApp debe abrir una conversación con el número correcto.
+
+Incluye un formulario de contacto con los siguientes campos:
+
+- Nombre.
+- Correo electrónico.
+- Teléfono opcional.
+- Asunto.
+- Mensaje.
+- Botón Enviar.
+
+El formulario debe validar los campos obligatorios y mostrar mensajes de éxito o error según el resultado real del envío.
+
+El formulario debe integrarse con Formspree una vez que el propietario proporcione el endpoint real.
+
+No inventes un endpoint de Formspree ni muestres una confirmación falsa.
+
+### 5.10. Pie de página
+
+Incluye:
+
+- Nombre y eslogan de la tienda.
+- Enlaces de navegación.
+- Información de contacto.
+- Ubicación.
+- Métodos de pago aceptados.
+- Aviso de privacidad.
+- Derechos reservados.
+
+No agregues enlaces ficticios a redes sociales ni información comercial no confirmada.
+
+## 6. CATÁLOGO INICIAL Y PRECIOS
+
+Crea un catálogo inicial de 30 productos organizados por categorías.
+
+Los precios siguientes son referenciales para el proyecto escolar. Deben poder modificarse posteriormente y verificarse antes de vender productos reales.
+
+Todos los precios deben mostrarse en soles peruanos con dos decimales.
+
+### 6.1. Iluminación y energía
+
+1. Linterna LED portátil — S/ 25.90. Descripción: linterna para uso doméstico y cortes de energía.
+2. Linterna recargable USB — S/ 39.90. Descripción: linterna portátil recargable.
+3. Lámpara LED de emergencia — S/ 34.90. Descripción: iluminación portátil para el hogar.
+4. Power bank de 10 000 mAh — S/ 59.90. Descripción: batería externa para dispositivos compatibles.
+5. Radio portátil de emergencia — S/ 69.90. Descripción: radio portátil para recibir información.
+6. Pilas alcalinas, paquete — S/ 12.90. Descripción: pilas para dispositivos compatibles.
+
+### 6.2. Protección contra lluvias
+
+7. Poncho impermeable — S/ 15.90. Descripción: protección personal para la lluvia.
+8. Impermeable reutilizable con capucha — S/ 39.90. Descripción: prenda de protección contra la lluvia.
+9. Botas de lluvia — S/ 49.90. Descripción: calzado impermeable, con tallas configurables.
+10. Paraguas reforzado — S/ 29.90. Descripción: paraguas para uso cotidiano.
+11. Mochila impermeable — S/ 69.90. Descripción: mochila para proteger pertenencias.
+12. Cubierta impermeable para mochila — S/ 19.90. Descripción: cubierta protectora para mochilas compatibles.
+
+### 6.3. Primeros auxilios
+
+13. Botiquín básico familiar — S/ 49.90. Descripción: conjunto básico de primeros auxilios.
+14. Botiquín familiar completo — S/ 89.90. Descripción: presentación ampliada de primeros auxilios.
+15. Manta térmica de emergencia — S/ 12.90. Descripción: manta compacta para un kit de emergencia.
+16. Vendas y gasas, paquete — S/ 14.90. Descripción: materiales básicos para curaciones.
+17. Esparadrapo médico — S/ 6.90. Descripción: cinta adhesiva para uso médico según sus indicaciones.
+
+### 6.4. Agua e higiene
+
+18. Bidón para agua de 10 litros — S/ 29.90. Descripción: recipiente para almacenar agua potable.
+19. Bidón para agua de 20 litros — S/ 44.90. Descripción: recipiente de mayor capacidad.
+20. Gel antibacterial de 500 ml — S/ 16.90. Descripción: producto para higiene de manos.
+21. Mascarillas descartables, paquete — S/ 9.90. Descripción: paquete para uso según las indicaciones del fabricante.
+22. Bolsas resistentes para residuos, paquete — S/ 12.90. Descripción: bolsas para manejo doméstico de residuos.
+
+### 6.5. Herramientas de emergencia
+
+23. Silbato de emergencia — S/ 7.90. Descripción: dispositivo para emitir señales sonoras.
+24. Cuerda multiuso de 10 metros — S/ 19.90. Descripción: cuerda para usos generales; no certificada para escalada.
+25. Guantes de trabajo — S/ 14.90. Descripción: guantes para tareas domésticas y limpieza.
+26. Cinta de señalización — S/ 12.90. Descripción: cinta para delimitar áreas temporalmente.
+27. Herramienta manual multiuso — S/ 24.90. Descripción: herramienta para tareas generales según sus características reales.
+
+### 6.6. Kits de emergencia
+
+28. Kit individual de emergencia — S/ 49.90. Descripción: kit compuesto por linterna, silbato y manta térmica.
+29. Kit familiar para lluvias — S/ 99.90. Descripción: kit compuesto por ponchos, linterna y productos básicos.
+30. Kit familiar de emergencia completo — S/ 179.90. Descripción: selección de artículos de preparación familiar.
+
+Los componentes de cada kit deben coincidir con su descripción.
+
+No afirmes que un kit contiene accesorios que no forman parte de él.
+
+No inventes stock ni confirmes disponibilidad real antes de configurar los datos comerciales.
+
+### 6.7. Requisitos de los productos
+
+Cada producto debe tener:
+
+- Identificador único.
+- Nombre.
+- Descripción.
+- Categoría.
+- Precio.
+- Imagen.
+- Stock.
+- Estado activo o inactivo.
+- Fecha de actualización.
+
+Los datos deben estar organizados de forma que los precios y las descripciones puedan modificarse sin reescribir toda la interfaz.
+
+Si la base de datos todavía no está configurada, identifica claramente los productos iniciales como datos de demostración y no simules una conexión real.
+
+## 7. CARRITO DE COMPRAS
+
+El carrito debe ser completamente funcional.
+
+### 7.1. Agregar productos
+
+Cuando el usuario pulse Agregar al carrito:
+
+1. Comprueba que el producto exista.
+2. Comprueba que esté activo y disponible.
+3. Valida la cantidad.
+4. Añade el producto al carrito o incrementa su cantidad.
+5. Actualiza el contador.
+6. Recalcula los importes.
+7. Muestra una confirmación visual discreta.
+
+No recargues innecesariamente toda la página.
+
+### 7.2. Contenido del carrito
+
+Muestra:
+
+- Imagen.
+- Nombre.
+- Precio unitario.
+- Cantidad.
+- Importe por línea.
+- Botón para aumentar la cantidad.
+- Botón para disminuirla.
+- Botón para eliminar el producto.
+- Subtotal.
+- Costo de envío cuando esté configurado.
+- Total.
+- Botón Seguir comprando.
+- Botón Continuar compra.
+
+Incluye la opción Vaciar carrito, con una confirmación previa.
+
+### 7.3. Cálculos
+
+El importe de cada línea se calcula multiplicando el precio unitario por la cantidad.
+
+El subtotal corresponde a la suma de los importes de todas las líneas.
+
+El total debe considerar el subtotal y los costos adicionales que estén realmente configurados.
+
+No inventes impuestos, comisiones ni gastos de envío.
+
+Utiliza importes numéricos fiables, preferiblemente céntimos enteros para evitar errores de precisión.
+
+Muestra los importes con el formato S/ 25.90.
+
+Si no se ha configurado una tarifa de envío, muestra “Costo de envío: por coordinar” y aclara que el subtotal no incluye ese importe.
+
+### 7.4. Persistencia del carrito
+
+El carrito debe conservar sus productos al recargar la página en el mismo dispositivo.
+
+Puedes utilizar localStorage para guardar temporalmente el carrito.
+
+Sin embargo, localStorage no sustituye la base de datos de pedidos.
+
+Antes de registrar una compra deben validarse nuevamente los precios y el stock en la fuente de datos confiable.
+
+## 8. PROCESO DE COMPRA
+
+Implementa un proceso de compra claro y sencillo.
+
+### Paso 1. Revisión del carrito
+
+El usuario revisa los productos, cantidades, precios e importes.
+
+### Paso 2. Datos del cliente
+
+Solicita:
+
+- Nombre completo.
+- Teléfono.
+- Dirección de entrega cuando corresponda.
+- Distrito o zona.
+- Referencia opcional.
+- Indicaciones adicionales opcionales.
+
+Valida los campos obligatorios y conserva los datos si ocurre un error recuperable.
+
+### Paso 3. Entrega
+
+Permite seleccionar las modalidades que realmente estén configuradas.
+
+Si todavía no se han definido tarifas o zonas, indica que deben coordinarse con el vendedor.
+
+No inventes tiempos de entrega ni cobertura.
+
+### Paso 4. Pago
+
+Permite seleccionar:
+
+- Yape.
+- Plin.
+- Transferencia bancaria.
+- Otros bancos.
+- Pago contra entrega.
+
+### Paso 5. Resumen
+
+Antes de confirmar, muestra:
+
+- Datos del cliente.
+- Productos.
+- Cantidades.
+- Precios unitarios.
+- Importes por línea.
+- Subtotal.
+- Costo de envío o indicación de que está pendiente de coordinación.
+- Total calculado.
+- Método de pago.
+- Modalidad de entrega.
+
+Permite volver atrás para corregir los datos.
+
+### Paso 6. Registro
+
+Cuando el usuario confirme el pedido:
+
+1. Valida los datos.
+2. Evita los clics repetidos.
+3. Envía el pedido a la función de servidor si se utiliza Firebase.
+4. Vuelve a validar los precios y el stock.
+5. Calcula el total con datos confiables.
+6. Registra el pedido.
+7. Espera una confirmación real de la operación.
+8. Muestra el código del pedido únicamente después de confirmar el registro.
+
+Si el registro falla, no muestres una compra exitosa.
+
+Conserva los datos y permite reintentar de forma segura.
+
+## 9. INTEGRACIÓN CON WHATSAPP
+
+El canal principal para coordinar las compras será WhatsApp.
+
+Número de contacto: +51 974 436 335.
+
+Número para el enlace internacional: 51974436335.
+
+Enlace:
+
+https://wa.me/51974436335
+
+Después de completar el proceso de compra, muestra un botón denominado “Enviar pedido por WhatsApp”.
+
+El botón debe abrir WhatsApp con un mensaje previamente preparado que incluya los datos del pedido.
+
+### 9.1. Formato del mensaje
+
+El mensaje debe seguir esta estructura:
+
+Hola, VANDER STORE. Quiero coordinar mi pedido.
+
+Código de pedido: [CÓDIGO DEL PEDIDO]
+
+Nombre: [NOMBRE DEL CLIENTE]
+
+Teléfono: [TELÉFONO]
+
+Entrega: [DIRECCIÓN O MODALIDAD]
+
+Productos:
+
+- [PRODUCTO] × [CANTIDAD]
+  Precio unitario: S/ [PRECIO]
+  Importe: S/ [IMPORTE]
+
+Subtotal: S/ [SUBTOTAL]
+
+Envío: [IMPORTE REAL O POR COORDINAR]
+
+Total: S/ [TOTAL CALCULADO, ACLARANDO SI EL ENVÍO ESTÁ PENDIENTE]
+
+Método de pago: [MÉTODO SELECCIONADO]
+
+Estado del pago: Pendiente de confirmación.
+
+Por favor, confirmen la disponibilidad, el pago y las condiciones de entrega.
+
+Gracias.
+
+El mensaje debe generarse con los datos reales del pedido y codificarse correctamente para utilizarse en el enlace de WhatsApp.
+
+### 9.2. Reglas obligatorias
+
+- Utiliza el número correcto.
+- Incluye todos los productos seleccionados.
+- Incluye cantidades y precios.
+- Incluye subtotal y total.
+- Incluye el método de pago.
+- Incluye el código del pedido si ya se ha registrado.
+- No crees otro pedido al abrir WhatsApp.
+- Si WhatsApp no se abre, permite copiar el mensaje completo.
+- No borres los datos del pedido al regresar al navegador.
+
+El mensaje queda preparado, pero el cliente debe pulsar Enviar dentro de WhatsApp. No afirmes que se envió automáticamente ni que el vendedor lo recibió sin confirmación.
+
+## 10. MÉTODOS DE PAGO
+
+### 10.1. Yape
+
+Muestra la opción Yape y el número proporcionado por el propietario: 974436335.
+
+No afirmes que la cuenta está verificada si no se ha comprobado.
+
+### 10.2. Plin
+
+Permite seleccionar Plin.
+
+Los datos definitivos deben configurarse cuando el propietario confirme que dispone de una cuenta o número habilitado.
+
+### 10.3. Transferencia bancaria
+
+Permite seleccionar transferencia bancaria.
+
+No inventes banco, titular, número de cuenta ni CCI. Los datos se incorporarán cuando el propietario los proporcione.
+
+### 10.4. Otros bancos
+
+Permite seleccionar esta opción para coordinar la transferencia con el vendedor.
+
+### 10.5. Pago contra entrega
+
+Permite seleccionar pago contra entrega cuando esté habilitado.
+
+Indica que depende de la confirmación de cobertura y condiciones por parte del vendedor.
+
+### 10.6. Estados del pago
+
+El sistema debe distinguir entre:
+
+- Pendiente de pago.
+- Pago reportado.
+- Pago confirmado.
+- Pago rechazado o no verificado.
+
+Seleccionar un método de pago no significa que el pago se haya realizado.
+
+No implementes cobros automáticos con tarjetas ni confirmaciones automáticas inexistentes.
+
+## 11. FORMULARIO DE CONTACTO CON FORMSPREE
+
+El formulario de contacto debe integrarse con Formspree, tal como indica el proyecto escolar.
+
+Debe contener:
+
+- Nombre.
+- Correo electrónico.
+- Teléfono opcional.
+- Asunto.
+- Mensaje.
+
+El formulario debe tener etiquetas claras, validaciones y mensajes de estado.
+
+Cuando el propietario proporcione el endpoint de Formspree:
+
+1. Configura el endpoint real.
+2. Verifica que todos los campos tengan el atributo name.
+3. Comprueba que el método de envío sea correcto.
+4. Realiza una prueba real.
+5. Comprueba que el mensaje llegue al correo configurado.
+6. Gestiona los errores sin mostrar una confirmación falsa.
+
+No inventes el endpoint.
+
+No publiques contraseñas ni claves secretas.
+
+El formulario de contacto sirve para consultas. No sustituye el registro de pedidos en la base de datos.
+
+## 12. INTEGRACIÓN ADICIONAL CON FIREBASE
+
+Además de los servicios solicitados por el profesor, quiero que la aplicación esté preparada para guardar los pedidos en Firebase.
+
+Esta integración es un requisito adicional del propietario y debe implementarse sin convertir el frontend en una aplicación basada en frameworks.
+
+### 12.1. Proyecto Firebase
+
+Utiliza el siguiente proyecto existente:
+
+- Project ID: vander-store.
+- Auth domain: vander-store.firebaseapp.com.
+- Base de datos prevista: Cloud Firestore.
+- Aplicación publicada: Netlify.
+
+Configuración web proporcionada:
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAKDZSsSyzZsyC3WcfgcRt74_SO2V5MAPQ",
+  authDomain: "vander-store.firebaseapp.com",
+  projectId: "vander-store",
+  storageBucket: "vander-store.firebasestorage.app",
+  messagingSenderId: "519949122604",
+  appId: "1:519949122604:web:0e8ca64461b7abb949a589",
+  measurementId: "G-0VB3ZWKHPC"
+};
+
+Esta configuración identifica el proyecto web, pero no demuestra que Firestore esté habilitado ni que las reglas estén configuradas.
+
+### 12.2. Compatibilidad con el requisito de tecnologías nativas
+
+Mantén el frontend desarrollado con HTML5, CSS3 y JavaScript nativo, sin frameworks ni bibliotecas frontend adicionales.
+
+Para operaciones seguras de escritura en Firestore, utiliza una función de servidor de Netlify y Firebase Admin SDK en el entorno de servidor, cuando se configure esa integración.
+
+No coloques credenciales administrativas en el navegador.
+
+No inventes credenciales privadas.
+
+Si la integración todavía necesita configuración, documenta los pasos pendientes y no simules que está conectada.
+
+### 12.3. Datos que deben almacenarse
+
+Utiliza Cloud Firestore para guardar los pedidos y, cuando se configure, el catálogo de productos.
+
+Organiza la información en colecciones como:
+
+**products**
+
+- name.
+- description.
+- categoryId.
+- price.
+- imageUrl.
+- stock.
+- active.
+- createdAt.
+- updatedAt.
+
+**categories**
+
+- name.
+- slug.
+- active.
+- sortOrder.
+
+**orders**
+
+- orderCode.
+- customerName.
+- phone.
+- deliveryAddress.
+- deliveryMethod.
+- deliveryNotes.
+- paymentMethod.
+- paymentStatus.
+- orderStatus.
+- subtotal.
+- shippingCost.
+- total.
+- createdAt.
+- updatedAt.
+
+**orderItems**
+
+- orderId.
+- productId.
+- productName.
+- unitPrice.
+- quantity.
+- lineTotal.
+
+Los pedidos deben conservar el nombre y el precio aplicados en el momento de la compra.
+
+Adapta la estructura al esquema real que se configure.
+
+### 12.4. Seguridad de Firebase
+
+Configura reglas de acceso adecuadas.
+
+Los visitantes no deben poder modificar productos, precios, inventario ni estados de pedidos.
+
+Ningún cliente debe poder consultar los datos privados de otros compradores.
+
+Las operaciones administrativas deben estar protegidas.
+
+No utilices reglas abiertas de lectura y escritura para toda la base de datos.
+
+Las credenciales privadas deben configurarse como variables de entorno en Netlify.
+
+No las publiques en GitHub ni las incluyas en el JavaScript frontend.
+
+### 12.5. Registro de pedidos
+
+Cuando el cliente confirme una compra:
+
+1. Valida los datos.
+2. Consulta los productos y precios actuales en el servidor.
+3. Comprueba el stock.
+4. Recalcula los importes.
+5. Evita pedidos duplicados.
+6. Guarda el pedido y sus líneas en Firestore.
+7. Devuelve el código de pedido después de confirmar el guardado.
+8. Muestra la confirmación.
+9. Permite abrir WhatsApp con el resumen.
+
+Si Firestore no responde, no muestres un pedido registrado.
+
+No sustituyas una base de datos real por localStorage.
+
+El carrito puede conservarse localmente, pero el pedido debe registrarse en Firestore cuando la integración esté habilitada.
+
+### 12.6. Estado de integración
+
+Si todavía faltan credenciales administrativas, reglas, configuración de Firestore o funciones de servidor, informa exactamente qué falta.
+
+No declares terminada la conexión hasta realizar una lectura y un registro de prueba reales.
+
+## 13. SEGURIDAD Y PRIVACIDAD
+
+Solicita únicamente los datos necesarios para procesar y coordinar los pedidos.
+
+No expongas información personal de otros clientes.
+
+No permitas modificar precios o totales desde el navegador.
+
+Valida los datos en el frontend y en el servidor cuando corresponda.
+
+No publiques contraseñas, claves administrativas ni tokens privados.
+
+No almacenes contraseñas bancarias ni datos de tarjetas.
+
+Protege las funciones administrativas mediante autenticación y permisos apropiados.
+
+Si se implementa un panel de administración, debe estar protegido y no puede utilizar una contraseña fija escrita en el código.
+
+Muestra un aviso de privacidad que explique el uso de los datos para gestionar consultas y pedidos.
+
+## 14. DISEÑO RESPONSIVE
+
+La tienda debe funcionar correctamente en celulares, tablets, laptops y computadoras de escritorio.
+
+En celulares:
+
+- Menú compacto.
+- Buscador accesible.
+- Tarjetas adaptadas a pantallas pequeñas.
+- Botones fáciles de pulsar.
+- Formularios legibles.
+- Carrito accesible.
+- Sin contenido cortado ni desplazamiento horizontal inesperado.
+
+En tablets:
+
+- Cuadrícula intermedia.
+- Espaciado equilibrado.
+- Navegación cómoda.
+- Formularios correctamente distribuidos.
+
+En computadoras:
+
+- Navegación horizontal.
+- Catálogo con varias columnas.
+- Uso adecuado del ancho.
+- Resumen de compra claro.
+- Diseño limpio y profesional.
+
+No diseñes exclusivamente para computadoras y adaptes el resto de manera superficial.
+
+## 15. ACCESIBILIDAD
+
+Implementa HTML semántico, etiquetas de formularios, navegación por teclado, foco visible, contraste adecuado y texto alternativo para imágenes.
+
+Los botones deben tener nombres comprensibles.
+
+Los mensajes de error deben indicar cómo corregir el problema.
+
+No dependas exclusivamente del color para comunicar estados.
+
+Respeta la preferencia de movimiento reducido del usuario.
+
+## 16. ORGANIZACIÓN DE ARCHIVOS
+
+Organiza el proyecto con archivos separados y rutas relativas.
+
+Estructura inicial recomendada:
+
+vander-store/
+- index.html
+- css/
+  - style.css
+- js/
+  - main.js
+  - catalogo.js
+  - carrito.js
+  - checkout.js
+  - validaciones.js
+  - api.js
+- imagenes/
+- netlify/
+  - functions/
+- README.md
+- .env.example
+
+Adapta la estructura cuando sea necesario, sin complicarla innecesariamente.
+
+El archivo index.html debe estar en la raíz del repositorio.
+
+Mantén los nombres de archivos en minúsculas, sin espacios ni tildes.
+
+El HTML, CSS y JavaScript deben estar correctamente vinculados.
+
+Utiliza rutas relativas para las imágenes y los archivos locales.
+
+No entregues todo el código concentrado en un único archivo.
+
+## 17. RENDIMIENTO Y CONSUMO DE CRÉDITOS
+
+No quiero que la aplicación dependa de llamadas a modelos de inteligencia artificial para realizar operaciones normales.
+
+La búsqueda, los filtros, los cálculos, el carrito, las validaciones y la generación del mensaje de WhatsApp deben resolverse mediante JavaScript y lógica de servidor convencional.
+
+No realices llamadas de IA para cada compra.
+
+Evita consultas repetidas innecesarias, recargas completas de página y dependencias pesadas.
+
+Optimiza las imágenes y utiliza carga diferida cuando sea apropiado.
+
+No implementes polling frecuente sin necesidad.
+
+Mantén el frontend sencillo y estático siempre que sea posible.
+
+Las operaciones de red deben mostrar indicadores de carga y gestionar los errores.
+
+No prometas latencia cero ni consumo ilimitado: la velocidad depende de la conexión y de los servicios configurados.
+
+## 18. MANEJO DE ERRORES
+
+Implementa un tratamiento adecuado para los siguientes casos:
+
+- Producto agotado.
+- Cantidad inválida.
+- Precio actualizado.
+- Carrito vacío.
+- Búsqueda sin resultados.
+- Imagen rota.
+- Datos de formulario incompletos.
+- Fallo al enviar el formulario.
+- Error de conexión con Firestore.
+- Error al registrar un pedido.
+- Doble clic en Confirmar compra.
+- WhatsApp no disponible.
+- Costo de envío sin configurar.
+
+Muestra mensajes claros, conserva los datos siempre que sea seguro y permite reintentar operaciones recuperables.
+
+No muestres confirmaciones falsas.
+
+No dejes que una excepción rompa toda la aplicación.
+
+## 19. LO QUE NO QUIERO EN LA APLICACIÓN
+
+No quiero:
+
+- Una simple maqueta estática.
+- Botones que no funcionen.
+- Enlaces vacíos.
+- Formularios decorativos.
+- Productos duplicados para aparentar un catálogo más grande.
+- Precios inconsistentes.
+- Imágenes rotas.
+- Texto de relleno.
+- Descuentos o reseñas inventados.
+- Animaciones excesivas.
+- Pop-ups innecesarios.
+- Frameworks frontend.
+- Plantillas comerciales prefabricadas.
+- Librerías frontend innecesarias.
+- Credenciales privadas publicadas.
+- Confirmaciones falsas de pedidos.
+- Confirmaciones falsas de pagos.
+- Costos de envío inventados.
+- Datos bancarios ficticios.
+- Pedidos guardados únicamente en localStorage.
+- Pedidos duplicados por clics repetidos.
+- Una conexión ficticia a Firebase.
+- Un formulario que informe que se envió sin haberlo hecho.
+- Un mensaje de WhatsApp que omita los productos o el total.
+- Un diseño que funcione en PC pero se rompa en celular.
+
+Todos los controles visibles deben tener una acción definida y comprobable.
+
+## 20. PRUEBAS OBLIGATORIAS
+
+Antes de considerar terminada la aplicación, verifica:
+
+1. Que la página principal cargue correctamente.
+2. Que todos los enlaces funcionen.
+3. Que el catálogo muestre los productos correctos.
+4. Que el buscador encuentre productos.
+5. Que los filtros funcionen y puedan limpiarse.
+6. Que el ordenamiento sea correcto.
+7. Que el carrito permita agregar productos.
+8. Que las cantidades puedan aumentar y disminuir.
+9. Que los productos puedan eliminarse.
+10. Que el subtotal y el total sean correctos.
+11. Que el carrito se conserve después de recargar.
+12. Que el checkout valide los datos.
+13. Que el mensaje de WhatsApp contenga el resumen completo.
+14. Que el número de WhatsApp sea correcto.
+15. Que el formulario esté conectado a Formspree cuando se configure el endpoint.
+16. Que el correo reciba un mensaje de prueba.
+17. Que Firebase funcione cuando esté configurado.
+18. Que los pedidos se guarden realmente en Firestore.
+19. Que no se creen pedidos duplicados.
+20. Que no se expongan datos privados.
+21. Que no existan imágenes rotas.
+22. Que no existan errores críticos en la consola.
+23. Que el diseño funcione en celular, tablet y PC.
+24. Que el proyecto se publique correctamente en Netlify.
+
+Distingue entre pruebas realizadas y pruebas pendientes. No afirmes que una función está probada si no lo has comprobado.
+
+## 21. PUBLICACIÓN EN GITHUB Y NETLIFY
+
+El proyecto debe prepararse para seguir la ruta de trabajo del profesor.
+
+Primero genera los archivos del proyecto.
+
+Después, revisa y corrige el código en Visual Studio Code.
+
+Luego, guarda el proyecto en GitHub, con index.html en la raíz.
+
+Personaliza la marca, los colores, las imágenes y los textos.
+
+Configura el botón de WhatsApp.
+
+Conecta el formulario con Formspree.
+
+Sube las modificaciones a GitHub.
+
+Finalmente, publica la página en Netlify y prueba el enlace público.
+
+Como el frontend utiliza HTML, CSS y JavaScript nativos, no necesita un comando de compilación salvo que alguna función adicional configurada lo requiera.
+
+Si se utilizan funciones de servidor de Netlify para Firebase, configura también su entorno y las variables privadas necesarias.
+
+No inventes enlaces públicos ni declares que la publicación está realizada si todavía no se ha completado.
+
+## 22. CRITERIOS DE ACEPTACIÓN
+
+La aplicación se considerará lista cuando:
+
+- Tenga un diseño profesional y coherente con VANDER STORE.
+- El catálogo incluya al menos los productos especificados.
+- Los precios se muestren en soles.
+- La búsqueda y los filtros funcionen.
+- El carrito permita modificar y eliminar productos.
+- Los cálculos sean correctos.
+- El checkout valide los datos.
+- WhatsApp abra el número correcto con el mensaje completo.
+- Formspree reciba consultas cuando esté configurado.
+- Firebase registre pedidos cuando esté habilitado y conectado.
+- Los errores se gestionen sin confirmaciones falsas.
+- La interfaz se adapte a celular, tablet y computadora.
+- El código esté separado y organizado.
+- No existan credenciales privadas en el frontend ni en GitHub.
+- El proyecto pueda publicarse en Netlify.
+- Las pruebas realizadas y las configuraciones pendientes estén documentadas.
+
+## 23. INSTRUCCIÓN FINAL PARA LA IA
+
+Utiliza este documento como especificación principal de VANDER STORE.
+
+Construye la aplicación siguiendo las tecnologías nativas solicitadas por el profesor. No cambies el proyecto por una plantilla ni introduzcas frameworks frontend.
+
+Prioriza el funcionamiento real, el diseño elegante, la claridad del código, la seguridad y la adaptación a distintos dispositivos.
+
+Implementa las funcionalidades solicitadas y revisa el código antes de entregarlo.
+
+Si necesitas dividir el trabajo, hazlo por módulos y conserva la compatibilidad entre los archivos.
+
+No elimines requisitos para simplificar el proyecto sin explicarlo.
+
+Si falta información externa, como el endpoint de Formspree, las credenciales administrativas de Firebase o las tarifas de entrega, deja la integración preparada, documenta el dato faltante y no simules que ya funciona.
+
+Entrega los archivos completos, correctamente vinculados y listos para abrir en Visual Studio Code.
+
+Incluye un README con instrucciones claras para probar la aplicación, configurar Formspree, configurar Firebase si corresponde, guardar el proyecto en GitHub y publicarlo en Netlify.
+
+El objetivo es conseguir una tienda virtual profesional, funcional, rápida y confiable que cumpla el proyecto escolar y las necesidades comerciales de VANDER STORE.

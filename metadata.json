@@ -1,0 +1,6 @@
+{
+  "name": "VANDER STORE",
+  "description": "Tienda virtual de prevención y emergencia ante lluvias e inundaciones con HTML5, CSS3 y JavaScript ES6+ nativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

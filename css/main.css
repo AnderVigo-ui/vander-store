@@ -1,0 +1,17 @@
+/**
+ * main.css - Hoja de estilo principal
+ * Arquitectura modular CSS3:
+ * 1. variables: Tokens de diseño y Custom Properties
+ * 2. reset: Reseteo accesible y normalización
+ * 3. base: Tipografía, utilidades y accesibilidad (WCAG)
+ * 4. layout: Cuadrículas, header, hero, footer y contenedores
+ * 5. components: Botones, tarjetas, formularios, modales, toasts
+ * 6. responsive: Breakpoints mobile-first y adaptaciones
+ */
+
+@import "./variables.css";
+@import "./reset.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./components.css";
+@import "./responsive.css";

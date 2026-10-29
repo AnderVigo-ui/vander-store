@@ -1,0 +1,89 @@
+/**
+ * variables.css - Tokens de diseño y variables globales CSS3
+ * Diseñado para facilitar mantenimiento y consistencia visual en todo el proyecto.
+ */
+
+:root {
+  /* Paleta cromática comercial */
+  --color-primary: #1e3a8a;          /* Azul corporativo profundo */
+  --color-primary-hover: #1e40af;
+  --color-primary-light: #eff6ff;
+  --color-secondary: #0d9488;        /* Verde azulado para acentos y acciones secundarias */
+  --color-secondary-hover: #0f766e;
+  
+  --color-dark: #0f172a;             /* Slate 900 - Texto principal */
+  --color-dark-muted: #334155;       /* Slate 700 - Texto secundario */
+  --color-light-muted: #64748b;      /* Slate 500 - Texto terciario */
+  --color-border: #e2e8f0;           /* Slate 200 - Bordes sutiles */
+  --color-border-hover: #cbd5e1;     /* Slate 300 */
+  --color-bg-base: #ffffff;          /* Fondo base */
+  --color-bg-alt: #f8fafc;           /* Slate 50 - Fondo alternativo para secciones */
+  --color-bg-subtle: #f1f5f9;        /* Slate 100 - Fondo de componentes interactivos */
+  
+  /* Estados del sistema */
+  --color-success: #15803d;
+  --color-success-bg: #f0fdf4;
+  --color-danger: #b91c1c;
+  --color-danger-bg: #fef2f2;
+  --color-warning: #b45309;
+  --color-warning-bg: #fffbeb;
+  
+  /* Tipografía fluida y accesible */
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --font-size-sm: clamp(0.875rem, 0.825rem + 0.25vw, 0.9375rem);
+  --font-size-base: 1rem;
+  --font-size-md: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
+  --font-size-lg: clamp(1.35rem, 1.2rem + 0.65vw, 1.65rem);
+  --font-size-xl: clamp(1.75rem, 1.5rem + 1.25vw, 2.25rem);
+  --font-size-2xl: clamp(2.25rem, 1.85rem + 2vw, 3rem);
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Escala de espaciado modular */
+  --spacing-2xs: 0.25rem;  /* 4px */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 0.75rem;   /* 12px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4.5rem;   /* 72px */
+
+  /* Radios de borde */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Elevaciones y sombras */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+
+  /* Transiciones estándar */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-Index estandarizados */
+  --z-header: 50;
+  --z-drawer: 90;
+  --z-modal: 100;
+  --z-toast: 110;
+
+  /* Dimensiones de contenedores */
+  --container-max-width: 1200px;
+  --container-padding: 1.25rem;
+}

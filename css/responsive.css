@@ -1,0 +1,71 @@
+/**
+ * responsive.css - Media queries y adaptabilidad responsiva
+ * Filosofía Mobile-First con mejoras progresivas para tabletas y pantallas grandes.
+ */
+
+/* Dispositivos medianos / Tablets (>= 640px) */
+@media (min-width: 640px) {
+  .hero-cta-group {
+    flex-direction: row;
+  }
+
+  .form-grid--two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid--two-cols .form-field--full {
+    grid-column: span 2;
+  }
+}
+
+/* Dispositivos de escritorio (>= 768px) */
+@media (min-width: 768px) {
+  .main-nav {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Pantallas grandes (>= 1024px) */
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: 2rem;
+  }
+
+  .section {
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
+  }
+}
+
+/* Modos de alto contraste y preferencias de usuario */
+@media (forced-colors: active) {
+  .btn,
+  .form-input,
+  .form-select,
+  .form-textarea,
+  .product-card,
+  .modal-dialog {
+    border: 2px solid CanvasText;
+  }
+}

@@ -89,21 +89,37 @@ exports.handler = async (event) => {
 
     const db = admin.firestore();
 
-    await db.collection("orders").doc(orderCode).set({
-      ...pedido,
-      fechaRegistroServidor:
-        admin.firestore.FieldValue.serverTimestamp()
+   const orderRef = db.collection("orders").doc(orderCode);
+
+const yaExiste = await db.runTransaction(async (transaction) => {
+  const existente = await transaction.get(orderRef);
+
+  if (existente.exists) {
+    return true;
+  }
+
+  transaction.create(orderRef, {
+    ...pedido,
+    fechaRegistroServidor:
+      admin.firestore.FieldValue.serverTimestamp()
+  });
+
+  return false;
+});
     });
 
-    return {
-      statusCode: 200,
-      headers,
-      body: JSON.stringify({
-        ok: true,
-        orderCode,
-        message: "Pedido guardado correctamente en Firestore."
-      })
-    };
+   return {
+  statusCode: 200,
+  headers,
+  body: JSON.stringify({
+    ok: true,
+    orderCode,
+    alreadyRegistered: yaExiste,
+    message: yaExiste
+      ? "Este pedido ya estaba registrado. No se modificó."
+      : "Pedido guardado correctamente en Firestore."
+  })
+};
 
   } catch (error) {
     console.error(

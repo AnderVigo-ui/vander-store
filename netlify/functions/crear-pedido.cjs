@@ -89,23 +89,15 @@ exports.handler = async (event) => {
 
     const db = admin.firestore();
 
-   const orderRef = db.collection("orders").doc(orderCode);
-
-const yaExiste = await db.runTransaction(async (transaction) => {
-  const existente = await transaction.get(orderRef);
-
-  if (existente.exists) {
-    return true;
-  }
-
-  transaction.create(orderRef, {
-    ...pedido,
-    fechaRegistroServidor:
-      admin.firestore.FieldValue.serverTimestamp()
-  });
-
-  return false;
-});
+  return {
+  statusCode: 200,
+  headers,
+  body: JSON.stringify({
+    ok: true,
+    orderCode,
+    message: "Pedido guardado correctamente en Firestore."
+  })
+};
     });
 
    return {

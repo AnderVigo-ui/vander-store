@@ -89,26 +89,21 @@ exports.handler = async (event) => {
 
     const db = admin.firestore();
 
-  return {
-  statusCode: 200,
-  headers,
-  body: JSON.stringify({
-    ok: true,
-    orderCode,
-    message: "Pedido guardado correctamente en Firestore."
-  })
-};
+    await db.collection("orders").doc(orderCode).set({
+      ...pedido,
+      fechaRegistroServidor:
+        admin.firestore.FieldValue.serverTimestamp()
     });
 
-  return {
-  statusCode: 200,
-  headers,
-  body: JSON.stringify({
-    ok: true,
-    orderCode,
-    message: "Pedido guardado correctamente en Firestore."
-  })
-};
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({
+        ok: true,
+        orderCode,
+        message: "Pedido guardado correctamente en Firestore."
+      })
+    };
 
   } catch (error) {
     console.error(
